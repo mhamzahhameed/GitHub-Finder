@@ -1,5 +1,5 @@
 import { SEARCH_USERS, CLEAR_USERS, GET_USER, GET_REPOS, SET_LOADING } from '../types'
-export default (state, action) => {
+const githubReducer = (state, action) => {
     switch(action.type) {
         case SEARCH_USERS:
             return {
@@ -35,3 +35,4 @@ export default (state, action) => {
     }
 }
 
+export default githubReducer
